@@ -1,0 +1,49 @@
+html,body { 
+    height:100%; 
+    margin:0;
+    padding:0;
+}
+  #container {
+    display:flex;
+    flex-direction:row;
+    min-height:100%;
+  }
+
+  #container #alone {
+    display:flex;
+    min-width: 50%;
+    background-color: #96eb7e;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #container #alone button {
+      justify-content: center;
+      width: 80px;
+      height: 50px;
+  }
+  
+  #container #people {
+    display:flex;
+    min-width: 50%;
+    background-color: #FF73A9;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #people button {
+    justify-content: center;
+      width: 150px;
+      height: 50px;
+}
+  
+#alone, #people {
+    display: none;
+    width: 100%;
+}
+
+.cards {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
