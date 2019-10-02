@@ -19,22 +19,20 @@ showAlone.addEventListener("click", () => {
 const showPeople = document.getElementById("btn-people");
 showPeople.addEventListener("click", () => {
     
-    const showPeopleContainer = document.getElementById("people");
-    showPeopleContainer.style.display="block";
+    const hiddenPeopleContainer = document.getElementById("people");
+    hiddenPeopleContainer.style.display="block";
 
-    const hiddenSelectPeople = document.getElementById("genderMovies");
-    hiddenSelectPeople.style.display="block"
+    const showPeopleStuff = document.getElementById("peopleStuff");
+    showPeopleStuff.style.display="block";
 
-    const hiddenDurationPeople = document.getElementById("durationMovies");
-    hiddenDurationPeople.style.display="block"
-
-    const hiddenRatingPeople = document.getElementById("ratingMovies");
-    hiddenRatingPeople.style.display="block"
+    const hiddenbuttonPeople = document.getElementById("buttonPeople");
+    hiddenbuttonPeople.style.display="none";
 
     const hiddenAlone = document.getElementById("alone");
     hiddenAlone.style.display="none";
 
 })
+
 
 const btnAlone = document.getElementById("btn-alone");
 btnAlone.addEventListener ("click", fetchMovie);
@@ -47,15 +45,12 @@ function fetchMovie()
         document.getElementById("showAloneMovie").innerHTML +=
             `<div class="cards">
                 <p>${data.Title}</p>
-           </div>`
-
-    let random = Math.floor(Math.random()*(data.length));
-    selection = data[random]
-           console.log(random)
-    })
-    })
+                <p>${data.Id} </p>
+                </div>`
+                
+            })
+        })
 }
- 
 
 //parte camila mart
 const arrayMovie = [
@@ -88,17 +83,15 @@ console.log(arraySelected);
             let container = document.getElementById("showMovie");
             container.innerHTML += 
             `<div class="cards">
+            <img src=${data.Poster}>
                 <h3>${data.Title}</h3>
-                <img src=${data.Poster}>
-                <p>${data.Genre}</p>
-           </div>`
-    }
-    
-)
+                <p>${data.Genre}</p>`
 
- })
-
+        }
+        )
+    })
 });
+ 
 
 const btnShowMovie2 = document.getElementById("durationMovies");
 btnShowMovie2.addEventListener("change", ()=>{

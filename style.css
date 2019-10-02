@@ -4,35 +4,55 @@ html,body {
     padding:0;
 }
 
-  #container {
+#container {
     display:flex;
     min-height:100%;
-  }
+}
 
-  #container #alone {
+#buttonPeople{
+    display:block;
+}
+
+#container #alone {
     display:flex;
+    min-width: 50%;
     background-color: #96eb7e;
     justify-content: center;
     align-items: center;
   }
   
-  #container #alone button {
-      justify-content: center;
-      width: 80px;
-      height: 50px;
-  }
-  
-  #container #people {
+#container #people {
     display:flex;
+    min-width: 50%;
     background-color: #FF73A9;
     justify-content: center;
     align-items: center;
 }
 
-#container #people button {
+  #container #alone #btn-alone {
+      justify-content: center;
+      width: 80px;
+      height: 50px;
+  }
+  
+
+#container #people #btn-people {
     justify-content: center;
       width: 150px;
       height: 50px;
+}
+
+#container #people #searchBar .button {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#searchBar {
+    display: flex;
+    align-content: right;
+   
 }
   
 #alone, #people {
@@ -40,10 +60,13 @@ html,body {
     width: 100%;
 }
 
-#genderMovies, #durationMovies, #ratingMovies {
-    display: none;
-    width: 40%;
+#peopleStuff {
+    display:none;
 }
+
+
+
+
 
 #people .center {
     display: flex;
