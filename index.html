@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <div id="container">
     
 
@@ -20,12 +21,34 @@
     
     <div id="people">
         <button id="btn-people">A C O M P A Ñ A D X</button>
-        <div id="showPeopleMovie"></div>
+        <select class="select" id="genderMovies">
+        <option value="">Género</option>
+        <option value="0">Accion</option>
+        <option value="1">Romantica</option>
+        <option value="2">Ciencia ficción</option>
+        <option value="3">Comedia</option>
+    </select>
+
+    <select class="select" id="durationMovies">
+        <option value="">Duración</option>
+        <option value= "2" >Hasta una hora</option>
+        <option value="1">Más de una hora</option>
+    </select>
+
+    <select class="select" id="ratingMovies">
+            <option value="">Rating</option>
+            <option value= "2" >Accion</option>
+            <option value="1">Huevos de 5 km</option>
+        </select>
+
+    <div id="showMovie"></div>
     </div>
 
     
-
 </div>
+
+
+    
 <script src="app.js"></script>
 <script src="main.js"></script>
 <script src="movies.js"></script>
