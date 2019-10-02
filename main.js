@@ -22,6 +22,15 @@ showPeople.addEventListener("click", () => {
     const showPeopleContainer = document.getElementById("people");
     showPeopleContainer.style.display="block";
 
+    const hiddenSelectPeople = document.getElementById("genderMovies");
+    hiddenSelectPeople.style.display="block"
+
+    const hiddenDurationPeople = document.getElementById("durationMovies");
+    hiddenDurationPeople.style.display="block"
+
+    const hiddenRatingPeople = document.getElementById("ratingMovies");
+    hiddenRatingPeople.style.display="block"
+
     const hiddenAlone = document.getElementById("alone");
     hiddenAlone.style.display="none";
 
