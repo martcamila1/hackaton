@@ -52,6 +52,7 @@ function fetchMovie()
         })
 }
 
+//crear buscador
 
 let container = document.getElementById("showMovie");
 sendInfoMovie =document.getElementById("send")
@@ -66,11 +67,17 @@ fetch(request)
     const data1= data.Search
     data1.forEach(elemnt=> {
             container.innerHTML += 
-            `<div class="cards">
-                <h3>${elemnt.Title}</h3>
-                <img src=${elemnt.Poster}>
+            `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">  
+                <h3 class="title">${elemnt.Title}</h3>
+                <img class="imgPoster" src=${elemnt.Poster}>
                 <p>${elemnt.Year}</p>
+                </div>
+                </div>
            </div>`
+           
+           
     })
     //const data1= data.Search.
 })
@@ -107,10 +114,15 @@ console.log(arraySelected);
         .then (data=> {
             let container = document.getElementById("showMovie");
             container.innerHTML += 
-            `<div class="cards">
-            <img src=${data.Poster}>
-                <h3>${data.Title}</h3>
-                <p>${data.Genre}</p>`
+            `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">
+            <h3 class="title">${data.Title}</h3>
+            <img class="imgPoster" src=${data.Poster}>
+            <p>${data.Genre}</p>
+       </div>
+       </div>
+       </div>`
 
         }
         )
@@ -131,10 +143,14 @@ arraySelected.map(function(Id){
     .then (data=> {
         let container = document.getElementById("showMovie");
         container.innerHTML += 
-        `<div class="cards">
-            <h3>${data.Title}</h3>
-            <img src=${data.Poster}>
+        `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">
+            <h3 class="title">${data.Title}</h3>
+            <img class="imgPoster" src=${data.Poster}>
             <p>${data.Genre}</p>
+       </div>
+       </div>
        </div>`
 }
 
