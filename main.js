@@ -55,7 +55,29 @@ function fetchMovie()
     })
     })
 }
- 
+let container = document.getElementById("showMovie");
+sendInfoMovie =document.getElementById("send")
+sendInfoMovie.addEventListener("click",()=>{
+let search = document.getElementById("searchMovies").value    
+const request = new Request('http://www.omdbapi.com/?i=tt3896198&apikey=a0d21d4f&s='+ search)    
+
+fetch(request)
+.then(response => response.json())
+.then(data =>{ 
+    document.getElementById("showMovie").innerHTML="";
+    const data1= data.Search
+    data1.forEach(elemnt=> {
+            container.innerHTML += 
+            `<div class="cards">
+                <h3>${elemnt.Title}</h3>
+                <img src=${elemnt.Poster}>
+                <p>${elemnt.Year}</p>
+           </div>`
+    })
+    //const data1= data.Search.
+})
+})
+
 
 //parte camila mart
 const arrayMovie = [
@@ -64,7 +86,8 @@ const arrayMovie = [
     ["tt1621780","tt0120338","tt2263570","tt0296915","tt0210843","tt0376873"],
     ["tt0462499"] ,
     ["tt0097474","tt0103644","tt0117571","tt7784604","tt0110978","tt1758820","tt0441529"],
-    
+    ["tt0107688","tt0114709","tt1156398","tt1269696"],
+    ["tt0325950","tt0110912"],
 ]
 
 const btnShowMovie1 = document.getElementById("genderMovies");
