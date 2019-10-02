@@ -13,7 +13,7 @@ html,body {
     display:block;
 }
 
-#container #alone {
+#container #no-alone {
     display:flex;
     min-width: 50%;
     background-color: #96eb7e;
@@ -29,7 +29,7 @@ html,body {
     align-items: center;
 }
 
-  #container #alone #btn-alone {
+  #container #no-alone #nobtn-alone {
       justify-content: center;
       width: 80px;
       height: 50px;
@@ -55,7 +55,7 @@ html,body {
    
 }
   
-#alone, #people {
+#no-alone, #people {
     display: none;
     width: 100%;
 }

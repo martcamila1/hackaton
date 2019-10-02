@@ -5,10 +5,10 @@ const arrayMovie1 = ["tt0096895", "tt1201607", "tt4667248", "tt0230600", "tt6155
 /*const btnShowMovie = document.getElementById("show");
 btnShowMovie.addEventListener("click", fetchMovie);*/
 
-const showAlone = document.getElementById("btn-alone");
+const showAlone = document.getElementById("nobtn-alone");
 showAlone.addEventListener("click", () => {
 
-    const showAloneContainer = document.getElementById("alone");
+    const showAloneContainer = document.getElementById("no-alone");
     showAloneContainer.style.display="block"; 
 
     const hiddenPeople = document.getElementById("people");
@@ -28,13 +28,13 @@ showPeople.addEventListener("click", () => {
     const hiddenbuttonPeople = document.getElementById("buttonPeople");
     hiddenbuttonPeople.style.display="none";
 
-    const hiddenAlone = document.getElementById("alone");
+    const hiddenAlone = document.getElementById("no-alone");
     hiddenAlone.style.display="none";
 
 })
 
 
-const btnAlone = document.getElementById("btn-alone");
+const btnAlone = document.getElementById("nobtn-alone");
 btnAlone.addEventListener ("click", fetchMovie);
 
 function fetchMovie()
