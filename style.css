@@ -62,7 +62,10 @@ html,body {
 
 #peopleStuff {
     display:none;
+   
 }
+   
+
 
 
 
@@ -108,4 +111,19 @@ html,body {
     width: 100%;
     justify-content: center;
     align-content: flex-end
+}
+.select{
+    font-family: 'Roboto', sans-serif;
+    background: #F9F9F5 ;
+    font-size:15px;
+    border-radius:10px;
+    width: 150px ;
+    border-color: black;
+    margin: 100px;
+}
+
+#searchBar{
+    float: right;
+    margin:20px
+    
 }
