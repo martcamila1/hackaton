@@ -63,16 +63,109 @@ const request = ('http://omdbapi.com/?i=tt3896198&apikey=9e07827a&s=frozen')
 fetch(request)
 .then(response => response.json())
 .then(data =>{ 
-    document.getElementById("showMovie").innerHTML="";
+    let containerNoAlone= document.getElementById("showAloneMovie")
+    document.getElementById("showAloneMovie").innerHTML="";
+    const data1= data.Search
+    data1.forEach(elemnt=> {
+        
+            containerNoAlone.innerHTML += 
+            `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">  
+                <h3 class="title">${elemnt.Title}</h3>
+                <img class="imgPoster" src=${elemnt.Poster}>
+                <p>${elemnt.Year}</p>
+                </div>
+                </div>
+           </div>`
+           
+           
+    })   
+})
+
+})
+
+//crear funciones para boton melancolico
+const randomMelbutton = document.getElementById("randomMel")
+randomMelbutton .addEventListener("click", ()=>{
+const request = ('http://www.omdbapi.com/?i=tt3896198&apikey=9e07827a&s=harry')   
+
+fetch(request)
+.then(response => response.json())
+.then(data =>{ 
+    let containerNoAlone= document.getElementById("showAloneMovie")
+    document.getElementById("showAloneMovie").innerHTML="";
     const data1= data.Search
     //for
     
     console.log(data1);
     
     data1.forEach(elemnt=> {
+        
+            containerNoAlone.innerHTML += 
+            `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">  
+                <h3 class="title">${elemnt.Title}</h3>
+                <img class="imgPoster" src=${elemnt.Poster}>
+                <p>${elemnt.Year}</p>
+                </div>
+                </div>
+           </div>`
+           
+           
+    })   
+})
+
+})
+const randomAnsbutton = document.getElementById("randomAns")
+randomAnsbutton.addEventListener("click", ()=>{
+const request = ('http://www.omdbapi.com/?i=tt3896198&apikey=9e07827a&s=amelie')   
+
+fetch(request)
+.then(response => response.json())
+.then(data =>{ 
+    document.getElementById("showAloneMovie").innerHTML="";
+    const data1= data.Search
+    
+    data1.forEach(elemnt=> {
         let containerNoAlone= document.getElementById("showAloneMovie")
             containerNoAlone.innerHTML += 
             `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">  
+                <h3 class="title">${elemnt.Title}</h3>
+                <img class="imgPoster" src=${elemnt.Poster}>
+                <p>${elemnt.Year}</p>
+                </div>
+                </div>
+           </div>`
+           
+           
+    })   
+})
+
+})
+
+
+
+//crear funciones para boton feliz
+const randomHappybutton = document.getElementById("randomHappy")
+randomHappybutton.addEventListener("click", ()=>{
+const request = ('http://www.omdbapi.com/?i=tt3896198&apikey=9e07827a&s=pie')   
+
+fetch(request)
+.then(response => response.json())
+.then(data =>{ 
+    
+    const data1= data.Search
+    document.getElementById("showAloneMovie").innerHTML="";
+    
+    data1.forEach(elemnt=> {
+        let containerNoAlone= document.getElementById("showAloneMovie")
+            containerNoAlone.innerHTML += 
+            `
+            <div class="cards"> 
             <div class="cards2"> 
             <div class="cards3">  
                 <h3 class="title">${elemnt.Title}</h3>
