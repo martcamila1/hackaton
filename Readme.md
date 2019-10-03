@@ -88,21 +88,31 @@ Mujeres y hombres entre 18 y 35 años, que al momento de decidir que visualizar 
 
 - HU1:"YO COMO usuario indeciso y regular de plataformas de streaming QUIERO visualizar comentarios de otras personas sobre las películas/series PARA decidir que película/serie quiero ver "
 
-- HU2:"NOSOTROS COMO usuarios acompañados QUEREMOS una forma simple y rápida PARA poder elegir que película/serie vamos a visualizar"
+- HU2:"NOSOTROS COMO usuarios acompañados QUEREMOS una forma simple, rápida e interactiva PARA poder elegir que película/serie vamos a visualizar"
 
 - HU3:"YO COMO usuario cinéfilo QUIERO mas información sobre las películas/series PARA aprender y saber mas sobre lo que visualizaré"
 
-**1.6 Criterios de aceptación y requerimientos DOD**
-
 ### 2 Visual design
-
-Desarrollo y desiciones de diseño
-
-  
 
 **2.1 Planificación**
 
 Se realizó con la herramienta [Trello](https://trello.com/b/Dktj8SYV/hackaton-movie)
+Donde se establecieron todos los pasos a seguir en el proyecto y las tarea de cada integrante del squad:
+*Equipo front end:*
+Al comienzo del proyecto, el equipo desarrollador, trabajó en conjunto el desarrollo de fetch, con los primeros acercamientos para recorrer la data y mostrarla dinámicamente y desarrollar arrays. Una ves lograda esta tarea, hubo una división de tareas.
+
+Camila Martinez:  Logica y DOM
+Camila Maira: CSS, Diseño de Interfaz
+
+Cabe destacar, que durante el proceso de la hackathon, ambas trabajaron juntas, constantemente con feedback y daily. Además, usaron el método de cambio de roles al momento de estar estancadas en alguna tarea del proyecto. 
+
+*Equipo Ux*
+
+Al comienzo del proyecto, se realizó una reunión a nivel de squad para tomar las primeras decisiones con respecto al proyecto. 
+Como equipo, mantuvimos un feeadback abierto y constante, abierto al dialogo y el aporte de todo el squad. Se realizó una división de tareas respecto al tiempo de trabajo y la cantidad de tareas por hacer. 
+
+Andrea Aguilar: Mapa de flujo, Prototipo Figma
+Catalina Tamayo: Usuario-encuestas, Readme
 
 **2.2 Referentes visuales**
 
@@ -118,16 +128,23 @@ Se realizó con la herramienta [Trello](https://trello.com/b/Dktj8SYV/hackaton-m
 
 <a  href="https://ibb.co/256ppLH"><img  src="https://i.ibb.co/M9hJJjQ/Captura-de-pantalla-2019-10-03-a-las-12-43-20-a-m.png"  alt="Captura-de-pantalla-2019-10-03-a-las-12-43-20-a-m"  border="0"></a><br /><a  target='_blank'  href='https://es.imgbb.com/'></a><br />
 
+  
 
-**2.2 Mapa de flujo** esta ok
+**2.2 Mapa de flujo** 
+<a href="https://ibb.co/jTP2pqh"><img src="https://i.ibb.co/drwqhXB/Control-de-Flujo.png" alt="Control-de-Flujo" border="0"></a>
 
 **2.3 Wireframe**
+<a href="https://ibb.co/WtbkSCQ"><img src="https://i.ibb.co/8cWrFkJ/unnamed.jpg" alt="unnamed" border="0"></a>
 
-**2.4 Prototipos** --> baja, alta y finales
+**2.4 Prototipos**
+Se diseñó en la plataforma [Figma](https://www.figma.com/file/ebp02fQeD7IWkx8b29zTHu/keveo?node-id=0:1)
+*Página de inicio*
+<a href="https://ibb.co/yP9KCdK"><img src="https://i.ibb.co/2h9RrWR/Desktop.png" alt="Desktop" border="0"></a>
+
+*Despliegue de páginas*
+<a href="https://ibb.co/rp5B5Bg"><img src="https://i.ibb.co/ZgcQcQ3/prototipo-1-01.jpg" alt="prototipo-1-01" border="0"></a>
 
 **2.5 Colores, diseño y tipografías**
-
- 
 
 *Paleta de color:*
 
@@ -135,19 +152,9 @@ Se realizó con la herramienta [Trello](https://trello.com/b/Dktj8SYV/hackaton-m
 
 *Tipografía [Roboto](https://fonts.google.com/specimen/Roboto)*
 
-<a  href="https://ibb.co/T4L1fnh"><img  src="https://i.ibb.co/m980jYz/Captura-de-pantalla-2019-10-03-a-las-12-37-42-a-m.png"  alt="Captura-de-pantalla-2019-10-03-a-las-12-37-42-a-m"  border="0"></a><br /><a  target='_blank'  href='https://es.imgbb.com/'>como subir fotos a internet</a><br />
+<a  href="https://ibb.co/T4L1fnh"><img  src="https://i.ibb.co/m980jYz/Captura-de-pantalla-2019-10-03-a-las-12-37-42-a-m.png"  alt="Captura-de-pantalla-2019-10-03-a-las-12-37-42-a-m"  border="0"></a><br /><a  target='_blank'  href='https://es.imgbb.com/'></a><br />
 
-**2.6 Evaluación Heurística**
-
+**Desiciones de diseño**
+Al diseñar la interfaz, se tomó en consideración de el uso de colores sólidos y la simpleza del diseño, recordando siempre que el usuario es quien pierde tiempo al momento de decidir que es lo que quiere ver, por lo tanto esta app debe ser simple y rápida de usar. 
+La tipografía Roboto es una tipografía sin serif, la cual no aporta contenido extra innecesario.
   
-
-### 3 Forma de uso e interfaz de usuario
-
-#### 3.1Testeo Usabilidad
-
-**3.2 Objetivo del testeo**
-
-**3.3 Resultados**
-
-**3.4 Insight** 
- Futuras mejoras
