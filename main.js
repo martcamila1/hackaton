@@ -253,7 +253,7 @@ console.log(arraySelected);
             <div class="cards3">
             <h3 class="title">${data.Title}</h3>
             <img class="imgPoster" src=${data.Poster}>
-            <p>${data.Genre}</p>
+          
        </div>
        </div>
        </div>`
@@ -282,7 +282,7 @@ arraySelected.map(function(Id){
             <div class="cards3">
             <h3 class="title">${data.Title}</h3>
             <img class="imgPoster" src=${data.Poster}>
-            <p>${data.Genre}</p>
+           
        </div>
        </div>
        </div>`
