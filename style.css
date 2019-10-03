@@ -70,7 +70,6 @@ html,body {
 
 
 
-
 #people .center {
     display: flex;
     justify-content:space-around;
@@ -81,7 +80,7 @@ html,body {
 .cards {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#showMovie{
+#showMovie ,#showAloneMovie{
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -126,4 +125,7 @@ html,body {
     float: right;
     margin:20px
     
+}
+#random{
+    display: none;
 }

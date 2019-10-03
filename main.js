@@ -13,7 +13,9 @@ showAlone.addEventListener("click", () => {
 
     const hiddenPeople = document.getElementById("people");
     hiddenPeople.style.display="none";
-
+    const random = document.getElementById("random");
+    random.style.display="block";
+    showAlone.style.display = "none";
 })
 
 const showPeople = document.getElementById("btn-people");
@@ -34,23 +36,57 @@ showPeople.addEventListener("click", () => {
 })
 
 
-const btnAlone = document.getElementById("nobtn-alone");
-btnAlone.addEventListener ("click", fetchMovie);
+// const btnAlone = document.getElementById("nobtn-alone");
+// btnAlone.addEventListener ("click", fetchMovie);
 
-function fetchMovie()
-{arrayMovie1.map(function(movieID){
-    fetch ("http://www.omdbapi.com/?i="+movieID+"&apikey=1eac7cef")
-    .then (answer => answer.json())
-    .then (data => {
-        document.getElementById("showAloneMovie").innerHTML +=
-            `<div class="cards">
-                <p>${data.Title}</p>
-                <p>${data.Id} </p>
-                </div>`
+// function fetchMovie()
+// {arrayMovie1.map(function(movieID){
+//     fetch ("http://www.omdbapi.com/?i="+movieID+"&apikey=1eac7cef")
+//     .then (answer => answer.json())
+//     .then (data => {
+//         document.getElementById("showAloneMovie").innerHTML +=
+//             `<div class="cards">
+//                 <p>${data.Title}</p>
+//                 <p>${data.Id} </p>
+//                 </div>`
                 
-            })
-        })
-}
+//             })
+//         })
+// }
+
+
+//crear funciones para boton triste
+const randomSadbutton = document.getElementById("randomSad")
+randomSadbutton.addEventListener("click", ()=>{
+const request = ('http://omdbapi.com/?i=tt3896198&apikey=9e07827a&s=frozen')   
+
+fetch(request)
+.then(response => response.json())
+.then(data =>{ 
+    document.getElementById("showMovie").innerHTML="";
+    const data1= data.Search
+    //for
+    
+    console.log(data1);
+    
+    data1.forEach(elemnt=> {
+        let containerNoAlone= document.getElementById("showAloneMovie")
+            containerNoAlone.innerHTML += 
+            `<div class="cards"> 
+            <div class="cards2"> 
+            <div class="cards3">  
+                <h3 class="title">${elemnt.Title}</h3>
+                <img class="imgPoster" src=${elemnt.Poster}>
+                <p>${elemnt.Year}</p>
+                </div>
+                </div>
+           </div>`
+           
+           
+    })   
+})
+
+})
 
 //crear buscador
 
@@ -82,7 +118,6 @@ fetch(request)
     //const data1= data.Search.
 })
 })
-
 //parte camila mart
 const arrayMovie = [
     ["tt0848228" ,"tt1392190" ,"tt5611648" ,"tt3397884" ,"tt2872732","tt2911666"],
