@@ -16,6 +16,8 @@ showAlone.addEventListener("click", () => {
     const random = document.getElementById("random");
     random.style.display="block";
     showAlone.style.display = "none";
+    const logo = document.getElementById("footerLogo");
+    logo.style.display="block";
 })
 
 const showPeople = document.getElementById("btn-people");
@@ -32,9 +34,13 @@ showPeople.addEventListener("click", () => {
 
     const hiddenAlone = document.getElementById("no-alone");
     hiddenAlone.style.display="none";
+    const logo = document.getElementById("footerLogo");
+    logo.style.display="block";
 
 })
-
+document.getElementById("footerLogo").addEventListener("click", () => {
+    location.reload();
+});
 
 // const btnAlone = document.getElementById("nobtn-alone");
 // btnAlone.addEventListener ("click", fetchMovie);
@@ -120,7 +126,7 @@ fetch(request)
 })
 const randomAnsbutton = document.getElementById("randomAns")
 randomAnsbutton.addEventListener("click", ()=>{
-const request = ('http://www.omdbapi.com/?i=tt3896198&apikey=9e07827a&s=amelie')   
+const request = ('http://www.omdbapi.com/?i=tt3896198&apikey=9e07827a&s=safe')   
 
 fetch(request)
 .then(response => response.json())
