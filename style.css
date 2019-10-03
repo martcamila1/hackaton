@@ -85,16 +85,20 @@ html,body {
     align-items: center;
  }
  #peopleStuff #searchBar input {
-    width: 200px;
+    width: 250px;
     height: 20px;
     border:none;
+    margin-top: 15px;
+    margin-right: 10px;
  }
+
  .select{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     background: white ;
     border-radius:15px;
     width: 400px ;
+    height: 30px;
     border-color: black;
  }
  #showMovie ,#showAloneMovie{
@@ -141,7 +145,7 @@ html,body {
  .imgPoster{
     width: 250px;
     height: 350px;
- }x
+ }
  .cards p {
     font-size: 14px;
     margin-left: 210px;
@@ -151,7 +155,7 @@ html,body {
  }
  .insideRandom {
     display:flex;
-    margin: 120px 100px 0px 100px;
+    margin: 50px 100px 0px 100px;
     flex-direction: row;
     justify-content: space-between;
  }
@@ -171,21 +175,26 @@ html,body {
     color:black;
  }
  .subTitle{
+     margin-top:50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600; 
+    font-size: 18px;
+    margin-left: 100px;
  }
  #prueba{
     background:#E2E2E1 ;
-    border-top: solid 1px black 
-}
-#footerLogo{
+    
+ }
+ #footerLogo{
     background:transparent;
     display: none;
     margin: 20px;
+    float: right;
+
     
-}
-.logoMovies{
-    width: 200px;
-    height: 80px;
     
-}
+ }
+ .logoMovies{
+    width: 100px;
+    height: 50px;
+ }
